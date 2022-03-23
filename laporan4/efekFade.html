@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Efek Fade</title>
+    <link rel="stylesheet" type="text/css" href="efek3.css">
+	<script type="text/javascript" src="jquery-3.6.0.js"></script> 
+	<script type="text/javascript">
+		$(document).ready(function () 
+        {
+        	$(".tampilKotak").click(function () { 
+               $("div").fadeIn(); 
+            });
+            $(".sembunyiKotak").click(function () { 
+               $("div").fadeOut(); 
+            });
+            $(".hilangKotak").click(function () { 
+               $("div").fadeTo("slow", 0.3); 
+            });
+        });
+	</script>
+</head>
+<body>
+	<div></div>
+	<button class="tampilKotak">Fade In</button>
+	<button class="sembunyiKotak">Fade Out</button>
+	<button class="hilangKotak">Fade to 0.3</button>
+</body>
+</html>
